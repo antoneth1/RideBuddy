@@ -1,7 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
 
-
 class RegistrationSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
 
@@ -24,3 +23,15 @@ class RegistrationSerializer(serializers.ModelSerializer):
         user.set_password(validated_data['password'])
         user.save()
         return user
+    
+
+class LocationSerializer(serializers.ModelSerializer):
+    
+    x_coordinate = serializers.FloatField(write_only=True)
+    y_coordinate = serializers.FloatField(write_only=True)
+
+    class Meta:
+        from .models import Location
+        model = Location
+
+
