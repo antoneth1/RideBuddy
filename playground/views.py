@@ -45,4 +45,3 @@ class HomeView(APIView):
 # Create your views here.
 # request -> response
 # request handler
-# action (view in Django, equivalent is template)
