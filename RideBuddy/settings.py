@@ -30,8 +30,9 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '0.0.0.0',
-    '10.138.8.184:8000'
-    ,'5335-108-16-89-229.ngrok-free.app']
+    '10.138.8.184:8000',
+    '5335-108-16-89-229.ngrok-free.app',
+    'e504-108-16-89-229.ngrok-free.app']
 
 
 # Application definition
